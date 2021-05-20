@@ -56,13 +56,26 @@
 	letter-spacing: 15px;
 	padding-top: 20px;
 	margin-top: 20px;
-
+    }
 	.titulo__principal--sub {
 		color:grey;
 		font-size: $medium;
 		font-style: normal;
 		text-align: center;
 	}
+}
+.titulo__principal--btn{
+	 width: 80px;
+	 height: 19px;
+	 border:0px;
+	 font-weight: bold;
+	margin: auto;
+	content: 10px;
+	 color: $black
+}
+.btn-outline-secondary{
+ background-color: lightgrey;
+ text-decoration: none;
 }
 .section__quienes--somos{
 	display: flex;
@@ -153,15 +166,6 @@
 		text-decoration: none;
 	}
 }
-.buttonHab {
-	background-color: $lGrey;
-	 width: 80px;
-	 height: 19px;
-	 border:0px;
-	 font-weight: bold;
-	margin: auto;
-	content: 10px;
-}
 
 .navButtonHab{
 	color: $black;
@@ -174,39 +178,13 @@
 	padding-top: 0px;
 }
 
-.serviciosTittle{
-	letter-spacing: 15px;
-	text-align: center;
-	font-size: $small;
-	color:$green;
-	padding-top: 80px;
-	padding-bottom: 20px;
-}
-.ulHab{
-	flex-flow: row nowrap;
-	margin: auto;
-	padding: auto;
-	width: 160px;
-	justify-content: center;
-
-}
-
-.listSimple{
-	margin-top: 5px;
-	margin-right: 10px;
-}
-.liHab{
-	margin-bottom: 32px;
-	margin-left: 5px;
-	margin-right: 30px;
-}
 .ulHab{
 	background-color: $lGrey;
 }
-.sectionColor{
+.section__color{
     background-image: linear-gradient(to bottom, $lGrey, $white, $grey);
 }
-.serviciosTittle{
+.servicios__tittle{
 	letter-spacing: 15px;
 	text-align: center;
 	font-size: 14px;
@@ -215,7 +193,7 @@
 	padding-bottom: 20px;
 	font-weight: bold;
 }
-.habServices3{
+.div__services{
 	background-color: $grey;
 	color: white;
 	font-size:$small;
@@ -225,7 +203,11 @@
 	display: flex;
 	justify-content: space-around;
 	padding: 30px;
-    margin: 30px;
+    margin: 30px;	
+		.div__services--ul{
+			margin-top: 15px;
+   				 margin-right: 50px;
+		}
 }
 .iframes {
 	display: block;
@@ -241,11 +223,8 @@
 	margin-bottom: 70px;
 }
 
-.ulHab1{
-	margin-top: 15px;
-    margin-right: 50px;
-}
-.serviciosTittle1{
+
+.servicios__tittle1{
 	letter-spacing: 15px;
 	text-align: center;
 	font-size: 14px;
@@ -253,16 +232,44 @@
 	padding-top: 30px;
 	padding-bottom: 20px;
 }
-.contacto-p{
+.div__contacto{
 	display: inline-grid;
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 60px;
+		.div__contacto--tittle{
+			letter-spacing: 15px;
+			text-align: center;
+			font-size: 14px;
+			color:$green;
+			padding-top: 30px;
+			padding-bottom: 20px;
+		}
+		.div__contacto--info{
+			font-size: $xSmall;
+			font-weight: bold;
+		}
+		
+		
 }
-.pContacto{
-	font-size: $xSmall;
-	font-weight: bold;
+.div__contacto--1{
+		.div__contacto--tittle--1{
+			letter-spacing: 15px;
+			text-align: center;
+			font-size: 14px;
+			color:$green;
+			padding-top: 80px;
+			padding-bottom: 20px;
+			font-weight: bold;
+		}
+		.div__contacto--sub {
+		color:grey;
+		font-size: $medium;
+		font-style: normal;
+		text-align: center;
+	}
 }
+
 input {
    width: 100px; height: 100px;
    transition: all 2s;       
@@ -271,3 +278,37 @@ input:focus {
    width: 200px;
    font-size: 24px;
 }
+
+.servicios__hab--ul{
+	flex-flow: row nowrap;
+	margin: auto;
+	padding: auto;
+	width: 160px;
+	justify-content: center;
+	background-color: $lGrey;
+}
+.servicios__hab--li{
+	margin-bottom: 32px;
+	margin-left: 5px;
+	margin-right: 30px;
+}
+.servicios__hab--img{
+	margin-top: 5px;
+	margin-right: 10px;
+}
+.section__habitaciones--img--2 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 60px;
+}
+.section__habitaciones--img--3{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border-style: solid;
+		border-color: $black;
+		height: 330px;
+		margin-top: 50px;
+}
+
